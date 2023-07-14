@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/addressbook.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600 &display=swap" rel="stylesheet">
+    <title>Address Book Form</title>
+</head>
+<body>
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="../assets/bookImage.png" alt="Image" style="height: 50px; width: 50px;">
+            <div>
+                <span class="emp-text">ADDRESS</span><br>
+                <span class="emp-text emp-book">BOOK</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="form-content">
+        <form class="form" action="#" onsubmit="save();return false">
+            <div class="form-head">Personal Address Form
+                <img src="../assets/cancel.png" alt="Image" style="height: 50px; width: 50px; float: right; background-color: white; border-radius: 50%; cursor: pointer;">
+            </div>
+            <div class="row-content">
+                <label for="name" class="label text" style="margin-top: 5%;">Full Name</label>
+                <input type="text" class="input" id="name" name="name" placeholder="" required>
+            </div>
+            <div class="row-content">
+                <label for="phone" class="label text">Phone Number</label>
+                <input type="text" class="input" id="number" name="number" placeholder="" required>
+            </div>
+            <div class="row-content">
+                <label for="address" class="label text">Address</label>
+                <textarea type="text" class="input" id="address" name="address" placeholder="" style="height: 100px;"></textarea>
+            </div>
+            <div class="row-content">
+                <div>
+                    <label class="label text" for="state">State</label>
+                    <label class="label text" for="city" style="margin-left: 82px;">City</label>
+                    <label class="label text" for="city" style="margin-left: 80px;">Zip</label>
+                </div>
+                <div>
+                    <select id="state" name="State" style="padding: 10px; font-size: medium; text-align: left; width: 31%;">
+                        <option value="Select State" style="margin-left: 20px;">Select State</option>
+                        <option value="1">Andhra Pradesh</option>
+                        <option value="2">Arunachal Pradesh</option>
+                        <option value="3">Assam</option>
+                        <option value="4">Bihar</option>
+                        <option value="5">Chhattisgarh</option>
+                        <option value="6">Goa</option>
+                        <option value="7">Gujarat</option>
+                        <option value="8">Haryana</option>
+                        <option value="9">Himachal Pradesh</option>
+                        <option value="10">Jharkhand</option>
+                        <option value="11">Karnataka</option>
+                        <option value="12">Kerala</option>
+                        <option value="13">Madhya Pradesh</option>
+                        <option value="14">Maharashtra</option>
+                        <option value="15">Manipur</option>
+                        <option value="16">Meghalaya</option>
+                        <option value="17">Mizoram</option>
+                        <option value="18">Nagaland</option>
+                        <option value="19">Odisha</option>
+                        <option value="20">Punjab</option>
+                        <option value="21">Rajasthan</option>
+                        <option value="22">Sikkim</option>
+                        <option value="23">Tamil Nadu</option>
+                        <option value="24">Telangana</option>
+                        <option value="25">Tripura</option>
+                        <option value="26">Uttar Pradesh</option>
+                        <option value="27">Uttarakhand</option>
+                        <option value="28">West Bengal</option>
+                    </select>
+                
+                    <select id="city" name="city" style="padding: 10px; font-size: medium; margin-left: 20px; width: 31%;">
+                        <option value="Select City" style="margin-right: 40px;">Select City</option>
+                        <option value="1">Andhra Pradesh</option>
+                        <option value="2">Arunachal Pradesh</option>
+                        <option value="3">Assam</option>
+                        <option value="4">Bihar</option>
+                        <option value="5">Chhattisgarh</option>
+                        <option value="6">Goa</option>
+                        <option value="7">Gujarat</option>
+                        <option value="8">Haryana</option>
+                        <option value="9">Himachal Pradesh</option>
+                        <option value="10">Jharkhand</option>
+                        <option value="11">Karnataka</option>
+                        <option value="12">Kerala</option>
+                        <option value="13">Madhya Pradesh</option>
+                        <option value="14">Maharashtra</option>
+                        <option value="15">Manipur</option>
+                        <option value="16">Meghalaya</option>
+                        <option value="17">Mizoram</option>
+                        <option value="18">Nagaland</option>
+                        <option value="19">Odisha</option>
+                        <option value="20">Punjab</option>
+                        <option value="21">Rajasthan</option>
+                        <option value="22">Sikkim</option>
+                        <option value="23">Tamil Nadu</option>
+                        <option value="24">Telangana</option>
+                        <option value="25">Tripura</option>
+                        <option value="26">Uttar Pradesh</option>
+                        <option value="27">Uttarakhand</option>
+                        <option value="28">West Bengal</option>
+                    </select>
+                    <input type="text" class="input" id="zip" name="zip" style="padding: 10px; font-size: medium; margin-left: 20px; width: 30%;" required>
+                </div>
+            </div>
+            <div class="buttonParent">
+                <div class="submit-reset">
+                    <button type="add" class="button submitButton" id="submitButton">Add</button>
+                    <button type="reset" class="resetButton button" id="resetButton">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
