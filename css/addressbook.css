@@ -26,7 +26,6 @@ html body{
 
 .logo-content-img{border: solid 0px #42515f;}
 
-
 .emp-text{
     font: normal normal bold 20px/25px Montserrat;
     font-weight:bolder;
@@ -187,4 +186,46 @@ select{
 .resetButton:hover{
     background-color: gray;
     color: white;
+}
+
+error-output{
+    margin-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
+
+@media only screen and (max-width:960px){
+    .form{
+        width: 85%;
+        padding: 44px 20px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .form{
+        margin-top: 10px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .uploadButton{
+        justify-content: flex-start;
+    }
+    
+    .submit-reset{
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .submitButton{
+        margin: 0;
+    }
+    .buttonParent{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
 }
