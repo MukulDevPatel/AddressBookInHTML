@@ -35,10 +35,21 @@ const createInnerHtml =()=>{
     document.querySelector('#table-display').innerHTML = innerHtml;
 }
 
+
 const getDeptHtml = (deptList) => {
   let deptHtml = '';
   for (const dept of deptList) {
       deptHtml = `${deptHtml} <div class='dept-label'>${dept}</div>`
   }
   return deptHtml;
+}
+
+//To delete any data from the table
+const remove = (node)=>{
+  let addressBookData=addressBookList.find(addData=>addData._id==node._id);
+  if (!addressBookData) return;
+  const index = addressBookList.map(addData=> addData._id).indexOf(addressBookData._id);
+  addressBookList.splice(index,1);
+  localStorage.setItem("AddressBookList",JSON.stringify(addressBookList));
+  createInnerHtml();
 }
